@@ -9,3 +9,7 @@ VGB is a speech recognising extensible Bot Framework for those with no friends b
 ## How to use
 - Todo.............
 - ``` some <code> here 01010010000101001111101010101010111010101110101011100101010111 ```
+
+### Libraries Used:
+- mattytemple/speak-js https://github.com/mattytemple/speak-js
+- TalAter/annyang https://github.com/TalAter/annyang

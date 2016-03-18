@@ -1,0 +1,24 @@
+<html>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.2.1/annyang.min.js"></script>
+<script src="speakClient.js"></script>
+<head>
+</head>
+<body>
+	<div id="audio"></div>
+</body>
+<script>
+if (annyang) {
+  var commands = {
+	  'Yo': function() {
+		 	speak("Yo! Whats Up?");
+	 	},
+    	'duck *stuff': function(stuff) {
+      	console.log(stuff);
+			speak(stuff);
+    	}
+  };
+  annyang.addCommands(commands);
+  annyang.start();
+}
+</script>
+<html>
