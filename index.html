@@ -1,9 +1,10 @@
 <html>
-<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.2.1/annyang.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.2.1/annyang.min.js"></script>
 <script src="speakClient.js"></script>
 <head>
 </head>
 <body>
+	<h1>Say Yo.  Bruh.</h1>
 	<div id="audio"></div>
 </body>
 <script>
@@ -15,10 +16,17 @@ if (annyang) {
     	'duck *stuff': function(stuff) {
       	console.log(stuff);
 			speak(stuff);
-    	}
+    	},
+		'*catchall': function(catchall) {
+      	console.log(catchall);
+			speak(catchall);
+    	},
   };
   annyang.addCommands(commands);
   annyang.start();
+  console.log("BEE BOOP.");
+}else{
+	console.log("BOO HOO :(");
 }
 </script>
 <html>
